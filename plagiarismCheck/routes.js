@@ -9,12 +9,8 @@ router.get('/completed/:scanID', (req, res, next) => {
     console.log(`Got scanID = ${scanID}`);
     console.log(`req.body = ${req.body}`);
 
-    /*return res.status(200).json({
-        id,
-        firstName: "Marco",
-        lastName: "Silva",
-        email: "marcos.henrique@toptal.com"
-    });*/
+    return res.status(200).json({
+    });
 });
 
 router.get('/error/:scanID', (req, res, next) => {
@@ -23,6 +19,9 @@ router.get('/error/:scanID', (req, res, next) => {
   console.log(`The 'error' route is fired!`);
   console.log(`Got scanID = ${scanID}`);
   console.log(`req.body = ${req.body}`);
+
+  return res.status(200).json({
+  });
 
 });
 
@@ -33,6 +32,8 @@ router.get('/creditsChecked/:scanID', (req, res, next) => {
   console.log(`Got scanID = ${scanID}`);
   console.log(`req.body = ${req.body}`);
 
+  return res.status(200).json({
+  });
 });
 
 module.exports = router;
